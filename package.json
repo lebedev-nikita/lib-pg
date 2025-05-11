@@ -1,0 +1,39 @@
+{
+  "name": "@y87cgp/pg",
+  "type": "module",
+  "version": "0.0.0",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun run build.ts",
+    "publish": "bun publish --access public"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bun"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lebedevna/lib-pg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebedevna/lib-pg.git"
+  },
+  "bugs": "https://github.com/lebedevna/lib-pg/issues",
+  "dependencies": {
+    "json-bigint": "^1.0.0",
+    "pg-promise": "^11.13.0",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "@types/json-bigint": "^1.0.4",
+    "bun-plugin-dts": "^0.3.0"
+  }
+}
